@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxer softtware landing page </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+        }
+        header{
+            background-color: whitesmoke;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav-links{
+           TExt-decoration: none;
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            color: grey
+        }
+        .nav-links a:hover {
+    color: #159ed5;
+}
+.hero {
+    background: linear-gradient(
+        120deg,
+        #747c80,
+        #202a30,
+        #111416
+    );
+
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background: #159ed5;
+    color: powderblue;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.button:hover {
+    background: white;
+}
+.benefits {
+    padding: 60px 5%;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.benefit h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    color: #777;
+    font-size: 14px;
+}
+.feature {
+    padding: 70px 5%;
+    background: #f5f7f8;
+}
+
+.feature-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.feature h2 {
+    margin-bottom: 15px;
+}
+
+.feature p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.feature li {
+    margin: 10px 0;
+}
+
+.preview {
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+.pricing {
+    background: #f5f7f8;
+    padding: 70px 5%;
+    text-align: center;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.price-card {
+    background: white;
+    padding: 25px 15px;
+    border: 1px solid #ddd;
+}
+
+.price-card h3 {
+    background: #159ed5;
+    color: white;
+    padding: 15px;
+}
+
+.price-card p {
+    padding: 10px;
+    color: #777;
+}
+
+.price-card a {
+    display: inline-block;
+    padding: 8px 25px;
+    border: 1px solid #159ed5;
+    color: #159ed5;
+    text-decoration: none;
+}
+.button1:hover {
+    background: BLACK;
+    color: white;
+}
+.button2:hover {
+    background: BLACK;  
+}
+.button3:hover {
+    background: BLACK;
+}
+.download {
+    padding: 70px 5%;
+    text-align: center;
+}
+.contact {
+    background: #1c2d49;
+    color: white;
+    padding: 70px 5%;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .benefit-grid,
+    .feature-content,
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 1;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.avif" alt="Logo" style="width: 75px; height: 75px;">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">feature</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    </header>
+    <section class="hero" id="home">
+    <p>SIMPLE · SMART · PRODUCTIVE</p>
+
+    <h1>
+        Software that works<br>
+        the way you do.
+    </h1>
+
+    <p>
+        Organize projects, collaborate with your team,
+        and get more done.
+    </p>
+
+    <a href="#download" class="button" style ="color:black";>
+        Get Started
+    </a>
+</section>
+<section class="benefits">
+    <div class="benefit-grid">
+
+        <div class="benefit">
+            <h3>Responsive Layout</h3>
+            <p>Works on desktop, tablet and mobile.</p>
+        </div>
+
+        <div class="benefit">
+            <h3>Work Smarter</h3>
+            <p>Organize your work in one place.</p>
+        </div>
+
+        <div class="benefit">
+            <h3>Made for Focus</h3>
+            <p>Keep your tasks simple and clear.</p>
+        </div>
+
+    </div>
+    </section>
+    <section class="feature" id="features">
+    <div class="feature-content">
+
+        <div>
+            <h2>Our Software Features</h2>
+
+            <p>
+                Plan, track and share your project progress.
+            </p>
+
+            <ul>
+                <li>Organize projects and tasks</li>
+                <li>View progress reports</li>
+                <li>Keep your team connected</li>
+            </ul>
+        </div>
+
+        <div class="preview">
+            <h3>Dashboard Preview</h3>
+            <p>Project Overview</p>
+        </div>
+
+    </div>
+</section>
+<section class="pricing" id="pricing">
+    <h2>Our Pricing</h2>
+
+    <div class="pricing-grid">
+
+        <div class="price-card">
+            <h3>Basic Plan</h3>
+            <h2>$10 / month</h2>
+            <p>2 Team Spaces</p>
+            <p>200 Tasks</p>
+            <p>Email Support</p>
+            <a href="#contact" class="button1">Sign Up</a>
+        </div>
+
+        <div class="price-card">
+            <h3>Business Plan</h3>
+            <h2>$20 / month</h2>
+            <p>10 Team Spaces</p>
+            <p>Unlimited Tasks</p>
+            <p>Priority Support</p>
+            <a href="#contact" class="button2">Sign Up</a>
+        </div>
+
+        <div class="price-card">
+            <h3>Pro Plan</h3>
+            <h2>$30 / month</h2>
+            <p>Unlimited Spaces</p>
+            <p>Unlimited Tasks</p>
+            <p>Dedicated Support</p>
+            <a href="#contact" class="button3">Sign Up</a>
+        </div>
+
+    </div>
+    <section id="download" class="download">
+    <h2>Download Our Software</h2>
+    <p>Start organizing your work today.</p>
+    <a href="#contact" class="button">Download App</a>
+</section>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <form action="#">
+        <!-- Name -->
+        <input type="text"
+               name="name"
+               placeholder="Your Name"
+               required>
+
+        <!-- Email -->
+        <input type="email"
+               name="email"
+               placeholder="Your Email"
+               required>
+
+        <!-- Country -->
+        <select id="country" name="country" required>
+            <option value="" disabled selected>
+                Select Your Country
+            </option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="india">India</option>
+        </select>
+
+        <!-- Submit Button -->
+        <button type="submit" class="button">
+            Send Message
+        </button>
+    </form>
+</section>
+
+
+</body>
+</html>
